@@ -1,1 +1,120 @@
+<!DOCTYPE html>
+<html>
+<head>
+<style>
+	
+    .center {
+    text-align: center;
+	}
+    
+    
+    body{
+    background-color:#FFB9E5 ;}
+    
+    h1{
+    color:white;
+    font-variant: small-caps;
+    font-family: verdana;
+    align:center;
+    border: 5px dotted;
+    border-color: #FCE3FF #FFD6EF ;}
+    .container {
+    overflow: hidden;
+    background-color: white;
+    font-family: Arial;
+}
+p{color:light-grey;
+  font-size:15px;}
 
+.container a {
+    float: left;
+    font-size: 16px;
+    color: pink;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+}
+
+.dropdown {
+    float: left;
+    overflow: hidden;
+}
+
+.dropdown .dropbtn {
+    cursor: pointer;
+    font-size: 16px;    
+    border: none;
+    outline: none;
+    color: pink;
+    padding: 14px 16px;
+    background-color: inherit;
+}
+
+.container a:hover, .dropdown:hover .dropbtn {
+    background-color: #EEEEEE  ;
+}
+
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #f9f9f9;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+}
+
+.dropdown-content a {
+    float: none;
+    color:#A2A2A2  ;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+    text-align: left;
+}
+
+.dropdown-content a:hover {
+    background-color: pink;
+}
+
+.show {
+    display: block;
+}
+    
+</style>
+  <title>Andrea Ortiz</title>
+</head>
+
+    <div class="center">
+  		<h1 >Andrea Ortiz</h1>
+ 	</div>
+    <div class="container">
+  <a href="#home">Home</a>
+  <a href="#news">Portfolio</a>
+  <div class="dropdown">
+    <button class="dropbtn" onclick="myFunction()">About Me!</button>
+    <div class="dropdown-content" id="myDropdown">
+      <a href="#">Likes</a>
+      <a href="#">Dislikes</a>
+      <a href="#">Fun Facts</a>
+    </div>
+  </div> 
+</div>
+<script>function myFunction() {
+    document.getElementById("myDropdown").classList.toggle("show");
+}
+
+// Close the dropdown if the user clicks outside of it
+window.onclick = function(e) {
+  if (!e.target.matches('.dropbtn')) {
+    var myDropdown = document.getElementById("myDropdown");
+      if (myDropdown.classList.contains('show')) {
+        myDropdown.classList.remove('show');
+      }
+  }
+}
+</script>      
+    <p>My name is Andrea and I'm a girl who codes. I'm 17 years old and I'm entering my senior year<br> at High Tech High School.   </p>
+     <img src="https://mail.google.com/mail/u/0/?ui=2&ik=e79d740af1&view=fimg&th=15d2dd3d48426474&attid=0.1&disp=inline&realattid=f_j4ymu70p0&safe=1&attbid=ANGjdJ9IsWxx9PR681iqGHD1GIat4b0tvfa9w7dByvFSHHpis5nfIHg8wXmqW_Zc4I35fuhgOSnzc0cY9wpYsEROtMbQgV8L19-b9j2YprompteUWm2arqtmybvZKV8&ats=1499712447256&rm=15d2dd3d48426474&zw&sz=w1366-h662" width="400" height="275">
+
+</body>
+</html>
